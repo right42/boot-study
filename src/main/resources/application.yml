@@ -1,0 +1,13 @@
+person:
+  name: 12345
+
+spring:
+  profiles:
+    active: local
+
+
+logging:
+  level:
+    org.springframework: INFO
+#  file:
+#    path: logs
