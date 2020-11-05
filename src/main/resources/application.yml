@@ -8,6 +8,4 @@ spring:
 
 logging:
   level:
-    org.springframework: INFO
-#  file:
-#    path: logs
+    org.springframework.transaction: DEBUG

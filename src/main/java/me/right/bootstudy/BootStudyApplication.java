@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
 
 import java.time.Duration;
 
-@SpringBootApplication(exclude = {HibernateJpaAutoConfiguration.class, DataSourceAutoConfiguration.class})
+@SpringBootApplication
 public class BootStudyApplication {
 
     public static void main(String[] args) {
@@ -44,4 +44,5 @@ public class BootStudyApplication {
     }
 
 }
+
 
