@@ -4,8 +4,3 @@ person:
 spring:
   profiles:
     active: local
-
-
-logging:
-  level:
-    org.springframework.transaction: DEBUG
