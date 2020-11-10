@@ -62,11 +62,11 @@
             </exclusions>
         </dependency>
 
-        <dependency>
-            <groupId>me.right42</groupId>
-            <artifactId>right42-spring-boot-starter</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>me.right42</groupId>-->
+<!--            <artifactId>right42-spring-boot-starter</artifactId>-->
+<!--            <version>1.0-SNAPSHOT</version>-->
+<!--        </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
         <dependency>
