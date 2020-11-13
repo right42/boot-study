@@ -37,8 +37,6 @@ public class BootStudyApplication {
 
         private final ResourceLoader resourceLoader;
 
-        private final ConversionService conversionService;
-
         @Override
         public void run(ApplicationArguments args) throws Exception {
             Resource bookYmlResource = resourceLoader.getResource("classpath:book.yml");

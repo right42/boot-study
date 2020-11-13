@@ -16,5 +16,10 @@ public class BookService {
         return CompletableFuture.completedFuture(book.getId());
     }
 
+    @Async
+    public void printBook(){
+        log.info("{} : book1", Thread.currentThread().getName());
+        log.info("{} : book2", Thread.currentThread().getName());
+    }
 
 }

@@ -32,4 +32,9 @@ class AsyncTest {
         assertThat(bookId).isEqualTo(1L);
     }
 
+    @Test
+    void printBook() {
+        bookService.printBook();
+    }
+
 }
