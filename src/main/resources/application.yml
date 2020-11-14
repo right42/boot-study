@@ -1,5 +1,5 @@
-person:
-  name: 12345
+#person:
+#  name: 12345
 
 spring:
   profiles:
