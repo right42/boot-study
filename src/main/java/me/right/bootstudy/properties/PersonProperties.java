@@ -14,7 +14,6 @@ import javax.validation.constraints.NotEmpty;
 @Validated
 public class PersonProperties {
 
-    @NotEmpty
     private String name;
 
     private int age;
