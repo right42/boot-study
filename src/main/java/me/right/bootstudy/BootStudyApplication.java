@@ -24,7 +24,7 @@ public class BootStudyApplication {
 
     public static void main(String[] args) {
         SpringApplication springApplication = new SpringApplication(BootStudyApplication.class);
-        springApplication.setWebApplicationType(WebApplicationType.NONE);
+        springApplication.setWebApplicationType(WebApplicationType.SERVLET);
         springApplication.run(args);
     }
 
