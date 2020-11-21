@@ -3,6 +3,7 @@ package me.right.bootstudy.async;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.BDDMockito;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -17,6 +18,7 @@ import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.BDDMockito.*;
 import static org.mockito.Mockito.*;
 
 @ContextConfiguration(classes = {BookService.class})
@@ -46,6 +48,23 @@ class BookServiceTest {
         assertThat(book.getId()).isEqualTo(1L);
         assertThat(book.getTitle()).isEqualTo("testBook");
         assertThat(book.getWriter()).isEqualTo("writer");
+    }
+
+    @Test
+    void findByIdWithBDD(){
+        given(bookRepository.findById(1L))
+                .willReturn(
+                        Optional.of(Book.builder()
+                            .id(1L)
+                            .title("testBook")
+                            .writer("writer")
+                            .build())
+                );
+
+        Book book = bookService.findById(1L);
+
+        assertThat(book).isNotNull();
+        assertThat(book.getTitle()).isEqualTo("testBook");
     }
 
 }
