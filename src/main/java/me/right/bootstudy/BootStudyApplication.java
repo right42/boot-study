@@ -28,7 +28,7 @@ public class BootStudyApplication {
         springApplication.run(args);
     }
 
-    @Component
+//    @Component
     @RequiredArgsConstructor
     @Slf4j
     public static class AppRunner implements ApplicationRunner {
