@@ -27,4 +27,11 @@ public class OrderCompleteEventListener {
 
     }
 
+    @EventListener
+    @Order(Ordered.HIGHEST_PRECEDENCE + 2)
+    public void orderCompleteLogging(OrderComplete orderComplete) {
+        log.info("order complete orderId : {}", orderComplete.getOrderId());
+
+    }
+
 }
