@@ -3,7 +3,6 @@ package me.right.bootstudy.mvc;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import me.right.bootstudy.async.Book;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
