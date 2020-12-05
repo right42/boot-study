@@ -16,7 +16,7 @@ class WebControllerTest {
     MockMvc mockMvc;
 
     @Test
-    void handlerArgumentResolverTest() throws Exception{
+    void guhandlerArgumentResolverTest() throws Exception{
 
         mockMvc.perform(
             post("/test")
