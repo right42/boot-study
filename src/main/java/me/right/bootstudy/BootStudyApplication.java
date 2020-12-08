@@ -41,14 +41,6 @@ public class BootStudyApplication {
 
         @Override
         public void run(ApplicationArguments args) throws Exception {
-            Resource bookYmlResource = resourceLoader.getResource("classpath:book.yml");
-
-            try (Stream<String> lines = Files.lines(bookYmlResource.getFile().toPath())) {
-                lines.forEach(log::info);
-            }
-
-            System.out.println(messageSource.getMessage("hello.msg", new String[]{}, Locale.ROOT));
-            System.out.println(messageSource.getMessage("hello.msg", new String[]{}, Locale.KOREA));
 
         }
     }
