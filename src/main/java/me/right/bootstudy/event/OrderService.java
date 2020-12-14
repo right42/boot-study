@@ -17,9 +17,6 @@ public class OrderService {
     @TimeLog
     public void order(Order order){
         System.out.println("order service : " + TransactionSynchronizationManager.getCurrentTransactionName());
-
-        // order processing..
-
         applicationEventPublisher.publishEvent(new OrderComplete(order.getOrderId()));
     }
 
