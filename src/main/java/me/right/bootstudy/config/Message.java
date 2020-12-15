@@ -2,13 +2,13 @@ package me.right.bootstudy.config;
 
 public class Message {
 
-    private final String message;
+    private final String content;
 
     public Message(String message) {
-        this.message = message;
+        this.content = message;
     }
 
-    public String getMessage(){
-        return this.message;
+    public String getContent(){
+        return this.content;
     }
 }

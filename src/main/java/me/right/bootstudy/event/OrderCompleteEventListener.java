@@ -13,9 +13,8 @@ import org.springframework.transaction.event.TransactionalEventListener;
 @Component
 public class OrderCompleteEventListener {
 
-
-    @TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT)
     @Order(Ordered.HIGHEST_PRECEDENCE + 1)
+    @TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT)
     public void orderComplete(OrderComplete orderComplete) {
         log.info("TransactionEventListener order complete orderId : {}", orderComplete.getOrderId());
     }
